@@ -1,4 +1,11 @@
+/*body background color*/
 div.stApp{
-    background-color: #ff0000;
+    background-color: #f0f1f7;
 }
 
+/*divider*/
+
+div.stMarkdown{
+    background-color: #fa0707; 
+
+}
