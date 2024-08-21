@@ -1,11 +1,28 @@
+/* This aligns the logo image at the top */
+/* not sure why all three are needed to align the image but it works*/
+div.st-emotion-cache-1kyxreq.e115fcil2 {
+  margin: auto;
+  display: block;
+}
+
+div > img {
+  margin: auto;
+  display: block;
+}
+
+div.st-emotion-cache-1kyxreq.e115fcil2 > img  {
+  margin: auto;
+  display: block;
+}
+/* ^^^ continue to adjust ^^^ */
+
+
+
 /*body background color*/
-div.stApp{
-    background-color: #f0f1f7;
-}
-
-/*divider*/
-
-div.stMarkdown{
-    background-color: #fa0707; 
+div.appview-container.st-emotion-cache-1yiq2ps.ea3mdgi9 {
+  background-color: #ffffff;
+    
+  text-align: center;
 
 }
+
