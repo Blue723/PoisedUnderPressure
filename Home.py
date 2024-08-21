@@ -1,25 +1,27 @@
 import pandas as pd
 
-from PIL import Image
 
 import streamlit as st
 
+clothing_selection = ['Hats', 'Shirts']
 
-with open('style.css') as f:
+
+st.set_page_config(layout="wide")
+
+with open('style.css', 'r') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-#  show logo image
-image = Image.open('logo.jpg')
 
-st.image(
-    image, 
-    caption='Image', 
-    width=400, 
-    channels='RGB')
+#image
+st.image('images/Red graphic circle PoizdP.png',  width=500, )    
+
+
+with open('index.html', 'r') as f:
+    st.markdown(f.read(), unsafe_allow_html=True)
+    
+
 
 st.divider()
 
-#clothing options
-clothing_options = ['Shirts', 'Hats']
-st.selectbox('Select Clothing', clothing_options)
-
+# select clothing type
+st.selectbox('Select Clothing Type', clothing_selection)
